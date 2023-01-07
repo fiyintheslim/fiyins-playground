@@ -77,12 +77,20 @@ function closingAnimation() {
       "widthAnimation"
     )
     .to(
-      ".preloader__content",
+      ".loader-container",
       {
         height: 0,
         duration: 2,
       },
-      "widthAnimation+=1"
+      "widthAnimation+=1.2"
     )
-    .addLabel("disAppearing");
+    .to(".loader-container", {
+      display: "none",
+      duration: 0,
+    })
+    .addLabel("disappearing")
+    .to(".line-one", { width: 0, duration: 1.5 }, "disappearing")
+    .to(".line-two", { width: 0, duration: 1.5 }, "disappearing")
+    .to(".preloader", { opacity: 0, duration: 2 })
+    .to(".preloader", { display: "none" });
 }

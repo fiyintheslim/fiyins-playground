@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html{
+    font-size: 10px;
+}
+
+:root {
+  --black: #020204;
+  --gray: #a5acaf;
+  --green-primary: #217960;
+  --green-secondary: rgba(0,244,175,.4)
+}
+
+body {
+  background-color: var(--black);
+
+}
+
+@import "preloader.scss";
+@import "header.scss";

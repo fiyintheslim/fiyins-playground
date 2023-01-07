@@ -48,3 +48,21 @@ gsap.fromTo(
     },
   }
 );
+
+gsap.fromTo(
+  scrollers[2].querySelector(".animation-wrap"),
+  {
+    x: 0,
+  },
+  {
+    x: -getScrollWidth(scrollers[2]) + 800,
+
+    scrollTrigger: {
+      trigger: scrollers[2].querySelector(".pin-wrap"),
+      start: "center center",
+      end: "+=900",
+      pin: true,
+      scrub: true,
+    },
+  }
+);

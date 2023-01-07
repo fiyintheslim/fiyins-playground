@@ -4,18 +4,34 @@
 
 body {
   background: var(--cl);
+  font-family: 'Montserrat', sans-serif;
 }
 
 ul {
-  list-style: none;
+  display: none;
+}
+.warning{
+  display: block;
+  color: white;
+  font-size: 1.8rem;
+}
+
+@media only screen and (min-width: 800px){
+  ul{
+    list-style: none;
   display: flex;
   background: white;
   border-radius: 1rem;
-  width: 70rem;
+ width: 70rem;
   height: 10rem;
   justify-content: space-evenly;
   align-items: center;
   position: relative;
+  }
+
+  .warning{
+    display: none;
+  }
 }
 
 li {
@@ -73,6 +89,19 @@ li.active a .text {
   left: 2.5rem;
   border: solid 0.5rem var(--cl);
   border-radius: 50%;
+}
+
+@media only screen and (max-width: 500px){
+  .indicator {
+    
+    width: 7rem;
+    height: 7rem;
+    
+    top: -2rem;
+    left: 1.2rem;
+    border: solid 0.5rem var(--cl);
+    border-radius: 50%;
+  }
 }
 
 .indicator:before {

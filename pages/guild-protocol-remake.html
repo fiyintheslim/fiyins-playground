@@ -5,24 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fiyin's Guild protocol</title>
-    <link rel="stylesheet" href="../styles/guild-protocol-remake.css" />
+    <link rel="stylesheet" href="../styles/guild-protocol-remake/index.scss" />
   </head>
   <body>
     <div class="preloader">
         <div class="preloader__content">
-            <div class="preloader__content__coins">
-                <img class="preloader__coin left" src="../assets/guild-protocol-remake/guild-coin-1.webp" alt="guild protocol coin" />
-                <img class="preloader__coin right" src="../assets/guild-protocol-remake/guild-coin-2.webp" alt="guild protocol coin" />
-            </div>
-            <div class="preloader__content__loading">
-                <div class="loader">
-                    <div class="loader__percentage">0%</div>
+            <div class="loader-container">
+                <div class="preloader__content__coins">
+                    <img class="preloader__coin left" src="../assets/guild-protocol-remake/guild-coin-1.webp" alt="guild protocol coin" />
+                    <img class="preloader__coin right" src="../assets/guild-protocol-remake/guild-coin-2.webp" alt="guild protocol coin" />
+                </div>
+                <div class="preloader__content__loading">
+                    <div class="loader">
+                        <div class="loader__percentage">0%</div>
+                    </div>
                 </div>
             </div>
             <div class="line-one"></div>
             <div class="line-two"></div>
         </div>
     </div>
+    <main>
+        <header>
+            <div class="container">
+            <div>
+                <img src="https://res.cloudinary.com/kadet/image/upload/q_100/v1643494392/guild-protocol/guild-protocol-logo_brcafz.svg" alt="guild protocol logo">
+            </div>
+            <ul>
+                <li class="link">Home</li>
+                <li class="link">Gameplay</li>
+                <li class="link">Tokens</li>
+                <li class="link">Roadmap</li>
+                <li class="link">Community</li>
+                <li class="link">Whitepaper</li>
+            </ul>
+            <div>
+                <button class="join-discord">Join Discord</button>
+            </div>
+        </div>
+        </header>
+        <div>
+            Content
+        </div>
+    </main>
     <script type="module" src="../ts/guild-protocol-remake/index.ts"></script>
   </body>
 </html>
