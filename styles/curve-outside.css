@@ -1,0 +1,99 @@
+:root {
+  --cl: #222327;
+}
+
+body {
+  background: var(--cl);
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  background: white;
+  border-radius: 1rem;
+  width: 70rem;
+  height: 10rem;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+}
+
+li {
+  display: block;
+  height: 100%;
+  position: relative;
+  z-index: 3;
+  flex-grow: 1;
+}
+
+li a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  position: relative;
+}
+
+li a .icon {
+  height: 100%;
+  font-size: 2.5rem;
+  line-height: 12rem;
+  color: var(--cl);
+  transition: 600ms;
+}
+
+li.active a .icon {
+  transform: translateY(-4rem);
+}
+
+li a .text {
+  transition: 500ms;
+  position: absolute;
+  opacity: 0;
+  transform: translateY(2rem);
+}
+
+li.active a .text {
+  opacity: 1;
+  transform: translateY(0.5rem);
+}
+
+.indicator {
+  position: absolute;
+  background: #29fd53;
+  /* background: white; */
+  width: 9rem;
+  height: 9rem;
+  transition: 600ms;
+  top: -4rem;
+  left: 2.5rem;
+  border: solid 0.5rem var(--cl);
+  border-radius: 50%;
+}
+
+.indicator:before {
+  content: "";
+  background: white;
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  left: -2.3rem;
+  top: calc(40% + 3px);
+  border-top-right-radius: 15rem;
+  box-shadow: 0rem -1.2rem 0 0rem var(--cl);
+}
+.indicator:after {
+  content: "";
+  background: white;
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  right: -2.27rem;
+  top: calc(40% + 3px);
+  border-top-left-radius: 15rem;
+  box-shadow: -0.1rem -1rem 0 0rem var(--cl);
+}

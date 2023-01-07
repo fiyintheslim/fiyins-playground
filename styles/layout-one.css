@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-size: 10px;
+}
+body {
+  background-color: skyblue;
+  font-family: "Montserrat", sans-serif;
+}
+
+nav {
+  margin: 3rem auto;
+}
+
+.nav-links {
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  list-style: none;
+  position: relative;
+}
+
+li a {
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 500;
+  padding: 1rem 0;
+  color: inherit;
+}
+
+.indicator {
+  height: 0.3rem;
+  border-radius: 1rem;
+  background: blue;
+  position: absolute;
+  left: 0;
+  bottom: -0.3rem;
+}
+
+section {
+  display: grid;
+  grid-gap: 3rem;
+  grid-template-columns: repeat(6, 1fr);
+  justify-items: center;
+  margin: 10rem 50rem;
+}
+
+.card {
+  height: 20rem;
+  padding: 5rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-column: span 3;
+  font-size: 1.2rem;
+  background-color: rgb(39, 198, 238);
+  box-shadow: 0.7rem 0.7rem 0rem 0rem black;
+  border: solid 0.4rem black;
+}
+
+.card p {
+  line-height: 1.2rem;
+  display: none;
+}
+
+.card.active p {
+  display: block;
+}
+
+.card.active {
+  grid-column: 1 / span 6;
+  grid-row: 1;
+  order: 0;
+  height: auto;
+}
+
+.card.inactive {
+  grid-column: span 2;
+}

@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --black: #020204;
+}
+
+body {
+  background-color: var(--black);
+}
+
+.preloader {
+  background: var(--black);
+  content: "preloader";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
