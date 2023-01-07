@@ -8,6 +8,21 @@
     <link rel="stylesheet" href="../styles/guild-protocol-remake.css" />
   </head>
   <body>
-    <div class="preloader"></div>
+    <div class="preloader">
+        <div class="preloader__content">
+            <div class="preloader__content__coins">
+                <img class="preloader__coin left" src="../assets/guild-protocol-remake/guild-coin-1.webp" alt="guild protocol coin" />
+                <img class="preloader__coin right" src="../assets/guild-protocol-remake/guild-coin-2.webp" alt="guild protocol coin" />
+            </div>
+            <div class="preloader__content__loading">
+                <div class="loader">
+                    <div class="loader__percentage">0%</div>
+                </div>
+            </div>
+            <div class="line-one"></div>
+            <div class="line-two"></div>
+        </div>
+    </div>
+    <script type="module" src="../ts/guild-protocol-remake/index.ts"></script>
   </body>
 </html>
