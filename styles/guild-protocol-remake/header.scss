@@ -26,7 +26,8 @@ header{
     background-color: var(--green-primary);
     border: none;
     font-weight: 700;
-    color: white
+    color: white;
+    cursor: pointer;
 }
 
 .container{
@@ -36,4 +37,6 @@ header{
     width: 90%;
     max-width: 120rem;
     height: 100%;
+
+    @include responsive(){}
 }
