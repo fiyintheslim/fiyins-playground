@@ -27,11 +27,9 @@ function initiateBurgerMenu() {
       "header ul li",
       {
         x: 5,
-        rotate: 2,
       },
       {
         x: 0,
-        rotate: 0,
         stagger: 0.05,
         duration: 0.3,
         ease: "elastic",
