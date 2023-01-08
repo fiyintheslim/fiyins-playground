@@ -16,11 +16,12 @@ html{
   --green-secondary: #153c31;
 }
 
+
 body {
 background-color: var(--black);
 font-family: 'Orbitron', sans-serif;
 }
 
-@import "fonts.scss";
+
 @import "preloader.scss";
 @import "header.scss";
