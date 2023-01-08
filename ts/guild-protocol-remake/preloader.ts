@@ -50,7 +50,7 @@ window.onload = function () {
     };
   }
   const loadAnimation = counter();
-  requestAnimationFrame(loadAnimation);
+  //requestAnimationFrame(loadAnimation);
 };
 
 function closingAnimation() {

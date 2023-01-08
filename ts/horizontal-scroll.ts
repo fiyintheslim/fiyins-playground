@@ -5,7 +5,6 @@ gsap.registerPlugin(ScrollTrigger);
 
 const scrollers = document.getElementsByClassName("horizontal");
 
-console.log(scrollers[0]);
 function getScrollWidth(el: Element) {
   const element = el.querySelector(".animation-wrap");
 

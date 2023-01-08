@@ -1,4 +1,4 @@
-@mixin responsive ($size:500px) {
+@mixin responsive ($size:1200px) {
     @media only screen and (min-width: $size){
         @content
     }

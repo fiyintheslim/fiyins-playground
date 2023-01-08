@@ -11,18 +11,16 @@ html{
 :root {
   --black: #020204;
   --gray: #a5acaf;
+  --gray-secondary:rgba(165,172,175,.5);
   --green-primary: #217960;
-  --green-secondary: rgba(0,244,175,.4)
+  --green-secondary: #153c31;
 }
 
 body {
-  background-color: var(--black);
-
+background-color: var(--black);
+font-family: "Oxanium regular", sans-serif;
 }
 
-main{
-    display: none;
-}
-
+@import "fonts.scss";
 @import "preloader.scss";
 @import "header.scss";
